@@ -28,9 +28,7 @@ var domainMethods = {
     return (containsOnlyNumbers.test(collectionId))
     },
 
-    isTrackIdValid (trackId){
-    return (containsOnlyNumbers.test(trackId))
-    },
+   
 
 
     isSongValid : (song) => {
@@ -41,9 +39,8 @@ var domainMethods = {
               domainMethods.isKindValid(song.kind)&&
               domainMethods.isArtistNameValid(song.artistName)&&
               domainMethods.isArtistIdValid(song.artistId)&&
-              domainMethods.isCollectionIdValid(song.collectionId)&&
-              domainMethods.isTrackIdValid(song.trackId)
-               ) 
+              domainMethods.isCollectionIdValid(song.collectionId)
+            ) 
             {
                 resolve("Valid");
             }else{
